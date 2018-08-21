@@ -1,0 +1,180 @@
+.all-products {
+    margin: 0 5vw;
+    display: flex;
+    justify-content: center;
+
+    .all-products2 {
+        margin: 0 auto;
+        max-width: 1700px;
+        min-width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .button {
+            margin-top: 5px;
+            min-width: 200px;
+            @media (max-width: $mobile_l) {
+                min-width: 160px;
+            }
+        }
+        .header__title {
+            margin-bottom: 5px;
+
+            @media (max-width: $mobile_l) {
+                font-size:0.8em;
+            }
+            @media (min-width: $desctops_s) {
+                font-size:1.5em;
+            }
+        }
+        .info-product {
+            text-align: center;
+            margin-top: 28px;
+        }
+        .product {
+            text-align: center;
+            width: 30%;
+            display: inline-block;
+            float: left;
+
+            @media (max-width: $mobile_l) {
+                max-height: 30vh;
+                height: 100%;
+                max-width: 100%;
+            }
+
+            img {
+                width: auto;
+                max-width: 80%!important;
+                height: auto;
+                max-height: 100%;
+            }
+        }
+        .product1 {
+
+            @media (max-width: $mobile_l) {
+                width: 53%;
+                position: absolute;
+                top: 90px;
+                left: -7%;
+            }
+            img {
+              //  @include transform(rotate(10deg));
+                max-width: 400px;
+            }
+            .product-rotate {
+              //  @include transform(rotate(10deg));
+            }
+        }
+        .product2 {
+            position: relative;
+            max-height: 84vh;
+            height: 100%;
+            width: 50%;
+            max-width: 90%;
+
+            @media (max-width: $mobile_l) {
+                max-height: 55vh;
+                height: 100%;
+                width: 60%;
+                position: absolute;
+                bottom: -25%;
+                max-width: 100%;
+            }
+            img {
+                max-width: 73% !important;
+                height: auto;
+                width: auto!important;
+                max-height: 100%;
+                z-index: 2;
+                position: relative;
+              //  @include transform(rotate(30deg));
+            }
+            .info-product {
+                position: absolute;
+                top: 25px;
+                right: 49%;
+                z-index: 1;
+                  @media (max-width: $mobile_l) {
+                right: 48%;  	
+                  }
+            }
+            .product-rotate {
+                z-index: 2;
+                position: relative;
+              //  @include transform(rotate(30deg));
+            }
+        }
+        .product3 {
+            @media (max-width: $mobile_l) {
+                width: 53%;
+                position: absolute;
+                top: 20%;
+                right: -7%;
+            }
+            img {
+              //  @include transform(rotate(-10deg));
+                max-width: 400px;
+                max-width: 90%!important;
+            }
+            .product-rotate {
+              //  @include transform(rotate(-10deg));
+            }
+        }
+    }
+}
+
+// Animations{
+.product.product1 img {
+    @include animation('product1-move 9.0s cubic-bezier(0.59,0.74,0.59,0.74) infinite');
+}
+
+.product.product2 img {
+    @include animation('product2-move 7.0s cubic-bezier(0.59, 0.74, 0.59, 0.74) infinite');
+}
+
+.product.product3 img {
+    @include animation('product3-move 8.0s cubic-bezier(0.59,0.74,0.59,0.74) infinite');
+}
+
+@include keyframes (product1-move) {
+    0% {
+        @include transform(translateY(0%));
+    }
+
+    55% {
+        @include transform(translateY(20px));
+    }
+
+    100% {
+        @include transform(translateY(0%));
+    }
+}
+
+@include keyframes (product2-move) {
+    0% {
+        @include transform(translateY(30px));
+    }
+
+    40% {
+        @include transform(translateY(0px));
+    }
+
+    100% {
+        @include transform(translateY(30px));
+    }
+}
+@include keyframes (product3-move) {
+    0% {
+        @include transform(translateY(30px));
+    }
+
+    30% {
+        @include transform(translateY(0px));
+    }
+
+    100% {
+        @include transform(translateY(30px));
+    }
+}

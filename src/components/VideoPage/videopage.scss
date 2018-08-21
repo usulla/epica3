@@ -1,0 +1,16 @@
+.video-page__block {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    #epica_video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+
+        @media (max-width: $mobile_l) {
+            width: 100%;
+        }
+    }
+}

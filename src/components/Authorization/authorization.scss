@@ -1,0 +1,35 @@
+.fade-background{
+	    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99;
+	height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+        flex-direction: column;
+
+          @media (max-width: $mobile_l) {
+        	position:relative;
+        }
+
+    .link{
+    	margin-top: 20px;
+    }
+}
+
+.authorization {   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btns-authoriz{
+	display: flex;
+    flex-direction: row;
+
+      @media (max-width: $mobile_l) {
+ flex-direction: column;
+      }
+}

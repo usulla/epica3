@@ -1,0 +1,141 @@
+.input-range__slider {
+    z-index: 2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 0;
+    height: 2.3rem;
+    width: 2.3rem;
+    z-index: 1;
+    margin-top: -1.6rem;
+    margin-left: -1.2rem;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.input-range__slider:active {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.input-range__slider:focus {
+    box-shadow: 0 0 0 5px rgba(63, 81, 181, 0.2);
+}
+
+.input-range--disabled .input-range__slider {
+    background: #cccccc;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    -webkit-transform: none;
+    transform: none;
+}
+
+.input-range__slider-container {
+    -webkit-transition: left 0.3s ease-out;
+    transition: left 0.3s ease-out;
+}
+
+.input-range__label {
+    color: #fff;
+    font-size: 0.7rem;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    white-space: nowrap;
+}
+
+.input-range__label--min,
+.input-range__label--max {
+    bottom: -1.4rem;
+    position: absolute;
+}
+
+.input-range__label--min {
+        left: 0.6rem;
+}
+
+.input-range__label--max {
+    right: 0.6rem;
+}
+
+.input-range__label--value {
+    position: absolute;
+    top: -0.9rem;
+    left: -0.1rem;
+    z-index: 3;
+    font-weight: 400;
+}
+
+.input-range__label.input-range__label--value .input-range__label-container {
+    color: #000;
+    font-size: .7rem;
+}
+.form-col1 .range-block.first-range .input-range__label-container:after{
+content:'лет';
+position:absolute;
+left: 1rem;
+}
+.form-col1 .range-block.second-range .input-range__label-container:after{
+content:'см';
+position:absolute;
+left: 1.3rem;
+}
+.form-col2 .range-block.th-range .input-range__label-container:after{
+content:'ч';
+position:absolute;
+left: 0.9rem;
+}
+.input-range__slider-container .input-range__label-container:after{
+  display:none;
+}
+
+.input-range__label-container {
+    left: -50%;
+    position: relative;
+}
+
+.input-range__label--max .input-range__label-container {
+    left: 50%;
+}
+
+.input-range__track {
+    background: #96b1d1;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    display: block;
+    height: 0.7rem;
+    position: relative;
+    -webkit-transition: left 0.3s ease-out, width 0.3s ease-out;
+    transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+
+.input-range--disabled .input-range__track {
+    background: #96b1d1;
+}
+
+.input-range__track--background {
+    left: 0;
+    margin-top: -0.15rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.input-range__track--active {
+    background: $orange;
+    @include linear-gradient(to right, #e39646, #e28436, #e1702a, #e05a21, #df3f1c);
+}
+
+.input-range {
+    height: 1rem;
+    position: relative;
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+.menu {
+    padding: 0 12px;
+    top: 0;
+    position: fixed;
+    @include flex;
+    width: 100vw;
+    @include transition;
+    justify-content: center;
+
+    @media (max-width: $mobile_l+1) {
+        width: 100vw;
+    }
+
+    .logo {
+        position: absolute;
+        left: 12px;
+        max-width: 95px;
+        min-width: 74px;
+        width: 7vw;
+        position: absolute;
+        @include transition;
+
+        @media (max-width: $mobile_l) {
+         //   left: calc(50vw - 37px); 
+        right: auto;
+        left: auto;
+        }
+        @media (max-width: $mobile_p+1) {
+        left: calc(50vw - 37px);
+        }
+        @media (min-width: $desctops_b+1) {
+            left: 10vw;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .header__logo-dancing {
+        position: absolute;
+        right: 12px;
+        top: 7px;
+        width: 11vw;
+        max-width: 196px;
+
+        @media (max-width: $mobile_l) {
+            width: 28vw;
+             top: 10px;
+        }
+        @media (min-width: $desctops_b+1) {
+            right: 10vw;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu-ul {
+        background: rgba(0, 106, 231, 0.2);
+        height: 40px;
+        margin: 0 auto;
+        color: #FFF;
+        border-radius: 0 0 18px 18px;
+        @include flex;
+        @include align-items(center);
+
+        @media (max-width: $mobile_l+1) {
+            display:none;
+        }
+
+        &__li {
+            position: relative;
+            list-style: none;
+            padding: 0px 1.5vw;
+            color: $white;
+            font-weight: 300;
+            font-size: 1.0em;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            height: 40px;
+            line-height: 40px;
+
+            @media (min-width: $desctops_s) {
+                // font-size: 1.4rem;
+            }
+            &:first-child {
+                border-radius: 0 0 0 18px;
+                padding-left: 1.5vw;
+            }
+            &:last-child {
+                border-radius: 0 0 18px 0;
+                padding-right: 1.5vw;
+            }
+            &--active {
+                background: rgba(0, 106, 231, 0.4);
+            }
+            &:hover {
+                cursor: pointer;
+                background: rgba(0, 106, 231, 0.2);
+            }
+            a {
+                color: $white;
+                text-decoration: none;
+
+                &--active {
+                    color: $white;
+                }
+            }
+        }
+        &__li.active {
+            background: rgba(0, 106, 231, 0.4); 
+        }
+    }
+}

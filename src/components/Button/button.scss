@@ -1,0 +1,38 @@
+.button {
+    border: 0;
+    text-align: center;
+    -webkit-appearance: none;
+    font-size: 1em;
+    background: $orange;
+    display: inline-block;
+    color: $white;
+    text-transform: uppercase;
+    padding: 14px 25px;
+    font-family: $font_family;
+    margin-top: 25px;
+    font-weight: 400;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+    -moz-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+    box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+    @include transition;
+
+    @media (max-width: $mobile_l) {
+        font-size: 0.8em;
+    }
+
+    &:hover {
+        background: $orange-hover;
+        cursor: pointer;
+        -moz-transform: translateY(5px)!important;
+        -o-transform: translateY(5px)!important;
+        -ms-transform: translateY(5px)!important;
+        -webkit-transform: translateY(5px)!important;
+        transform: translateY(5px)!important;
+        -webkit-box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+        -moz-box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+        box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+    }
+}
