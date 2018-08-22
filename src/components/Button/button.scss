@@ -35,4 +35,14 @@
         -moz-box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
         box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
     }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
 }

@@ -5,10 +5,17 @@ import card_girl from '../../images/card/cardgirl.jpg';
 class HeroCard extends React.Component {
 
   render() {
+    var calssadd;
+    if (this.props.datacard.gender == 'Парень'){
+     calssadd = 'mancard';
+    }
+    else{
+calssadd = 'girlcard';
+    }
     return (
 <div className='hero-card__card'>
 
-<div className='hero-card__left'>
+<div className={`hero-card__left ${calssadd}`}>
 </div>
 
 <div className='hero-card__right'>

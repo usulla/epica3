@@ -1,93 +1,112 @@
-.hero-card__block{
-	height: calc(100vh - 40px);
+.hero-card__block {
+    height: calc(100vh - 40px);
     margin-top: 40px;
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
-    .link{
-    display: inline-block;
+    .link {
+        display: inline-block;
     }
-    .btns-authoriz{
-  margin-top:20px
+    .btns-authoriz {
+        margin-top: 20px
+    }
+    .form-title {
+        margin-top: 0;
+    }
 }
- .form-title{
- 	margin-top:0;
- }
-}
-.hero-card__card{
-	     display: flex;
+
+.hero-card__card {
+    display: flex;
     align-items: center;
     width: 750px;
-       background: rgba(0, 106, 231, 0.5);
+    background: rgba(0, 106, 231, 0.5);
     border-radius: 5px;
 
     @media (max-width: $mobile_l) {
-    width: auto;
-    margin: 0 20px;
-    max-width: 550px;
+        width: auto;
+        margin: 0 20px;
+        max-width: 550px;
     }
 }
-.hero-card__left, .hero-card__right{
-   display: inline-block;
+
+.hero-card__left,
+.hero-card__right {
+    display: inline-block;
 }
-.hero-card__left{
-	overflow: hidden;
-	width: 30%;
-	height: 0;
+
+.hero-card__left {
+    overflow: hidden;
+    width: 30%;
+    height: 0;
     padding-bottom: 43%;
     border-radius: 5px 0 0 5px;
-	background: url('../images/card/cardman.jpg');
+    img {
+        width: 100%;
+    }
+}
+
+.hero-card__left.mancard {
+    background: url('../images/card/cardman.jpg');
     background-size: cover;
     background-position: top center;
+}
 
-	    img{
-	    	width:100%;
-	    }
+.hero-card__left.girlcard {
+    background: url('../images/card/cardgirl.jpg');
+    background-size: cover;
+    background-position: top center;
 }
-.hero-card__right{
-	    padding: 0px 0 0 40px;
-	     width:70%;
+
+.hero-card__right {
+    padding: 0px 0 0 40px;
+    width: 70%;
 }
-.left-col, .right-col{
-	display: inline-block;
+
+.left-col,
+.right-col {
+    display: inline-block;
 }
-.left-col{
-	    margin-right: 40px;
+
+.left-col {
+    margin-right: 40px;
 }
-.row-card__title{
-	display:block;
+
+.row-card__title {
+    display: block;
 }
-.row-card__content{
-	text-transform:uppercase;
-	    font-weight: 400;
+
+.row-card__content {
+    text-transform: uppercase;
+    font-weight: 400;
 }
-.row-card{
-	margin-bottom: 18px;
+
+.row-card {
+    margin-bottom: 18px;
     margin-top: 18px;
 
     @media (max-width: $mobile_l) {
-    margin-bottom: 5px;
-    margin-top: 5px;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
 }
-.hero-card__title.form-title.site-title{
-	@media (max-width: $mobile_l) {
-		margin: 0 20px;
-     font-size: 1.0em;
 
-	}
+.hero-card__title.form-title.site-title {
+    @media (max-width: $mobile_l) {
+        margin: 0 20px;
+        font-size: 1.0em;
+    }
 }
-.btns-authoriz{
-  justify-content: center;
 
-  @media (max-width: $mobile_l) {
-  	    flex-direction: column;
-    
-  }
-  .btn-authoriz{
-  	@media (max-width: $mobile_l) {
-  	margin: 0 auto;
-  }
-  }
+.btns-authoriz {
+    justify-content: center;
+
+    @media (max-width: $mobile_l) {
+        flex-direction: column;
+    }
+    .btn-authoriz {
+        @media (max-width: $mobile_l) {
+            margin: 0 auto;
+        }
+    }
 }

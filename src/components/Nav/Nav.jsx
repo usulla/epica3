@@ -9,7 +9,9 @@ const Nav = ({list}) => {
     return (
         <nav className='menu'>
         <ToggleMenu/>
-                <div className='logo'><img className='header__logo-epica' src={header_logo_epica}/></div>
+                <div className='logo'><a href='http://www.ehrmann.ru/products/epica/?utm_source=tnt-online&utm_medium=button&utm_content=epica&utm_campaign=Epica_TNT_Dances_aug-dec2018
+
+' target='_blank'><img className='header__logo-epica' src={header_logo_epica}/></a></div>
                 <ul className="menu-ul menu__menu-ul">
                     {list.map((li, index) => 
                         <li key={index} className="menu-ul__li">
@@ -18,7 +20,7 @@ const Nav = ({list}) => {
                     )
                     }
                 </ul>
-             <div className='header__logo-dancing'><img src={header_logo_dancing}/></div>
+             <div className='header__logo-dancing'><a href='http://tanci.tnt-online.ru' target='_blank'><img src={header_logo_dancing}/></a></div>
         </nav>
     );
 };

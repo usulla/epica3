@@ -21,7 +21,8 @@ class ProductsEpica extends React.Component {
 <span className='header__title'>
 Йогурты EPICA
 </span>
-<Button text={'Больше вкусов'}/>
+<div className='button'><a target='_blank' href='http://www.ehrmann.ru/products/epica/?utm_source=tnt-online&utm_medium=button&utm_content=epica&utm_campaign=Epica_TNT_Dances_aug-dec2018'>Больше вкусов</a>
+</div>
 </div>
 </div>
 <div className='product product2'>
@@ -29,7 +30,9 @@ class ProductsEpica extends React.Component {
 <span className='header__title'>
 Питьевые йогурты<br/> EPICA
 </span>
-<Button text={'Больше вкусов'}/>
+<div className='button'>
+<a target='_blank' href='http://www.ehrmann.ru/products/epica/pitevoi/?utm_source=tnt-online&utm_medium=button&utm_content=pitevoi&utm_campaign=Epica_TNT_Dances_aug-dec2018'>Больше вкусов</a>
+</div>
 </div>
 <div className='product-rotate'>
 <img src={prosuct2} />
@@ -43,7 +46,9 @@ class ProductsEpica extends React.Component {
 <span className='header__title'>
 Йогурты EPICA Crispy
 </span>
-<Button text={'Больше вкусов'}/>
+<div className='button'>
+<a target='_blank' href='http://www.epicayogurt.ru/?utm_source=tnt-online&utm_medium=button&utm_campaign=Epica_TNT_Dances_aug-dec2018'>Больше вкусов</a>
+</div>
 </div>
 </div>
 </div>

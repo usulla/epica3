@@ -34,7 +34,7 @@ export default class AllWorks extends React.Component {
    render() {
      var settings = {
       dots: false,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
       rows: 2,
