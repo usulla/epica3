@@ -108,7 +108,9 @@ const FullpageWrapper = fullpageProps => ( < ReactFullpage { ...fullpageProps } 
                 <HeaderBlock/>
                 <div className='man1'> <img className='header__man1 man' src={header_man1}/></div >
                 <FullpageWrapper { ...fullpageOptions }/> <div className='man2'> <img className='header__man2 man' src={ header_man2}/></div >
+                <div className='plus16'>16+</div>
                 </div>
+
             )
         }
         ReactDOM.render( < All / > , document.getElementById('root'));

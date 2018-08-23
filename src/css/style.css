@@ -55,13 +55,6 @@
   font-style: normal;
   font-weight: 200; }
 
-@font-face {
-  font-family: "TNTSansCondensed-Regular";
-  src: url("http://tnt-design.tnt-online.ru/tnt-sans/condensed/TNTSansCondensed-Regular.eot");
-  src: url("http://tnt-design.tnt-online.ru/tnt-sans/condensed/TNTSansCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("http://tnt-design.tnt-online.ru/tnt-sans/condensed/TNTSansCondensed-Regular.woff") format("woff"), url("http://tnt-design.tnt-online.ru/tnt-sans/condensed/TNTSansCondensed-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
 /* Variables */
 /* Mixins */
 .header {
@@ -651,13 +644,16 @@ section.form {
     margin-bottom: -10vh;
     margin-left: calc(50% - 10vh);
     z-index: 2;
-    position: relative; }
+    position: relative;
+    -webkit-box-shadow: 6px 10px 19px 17px rgba(46, 60, 91, 0.4);
+    -moz-box-shadow: 6px 10px 19px 17px rgba(46, 60, 91, 0.4);
+    box-shadow: 6px 10px 19px 17px rgba(46, 60, 91, 0.4); }
   section.form .form-avatar.man-ava {
-    background: url("../images/card/cardman.jpg");
+    background: url("../images/card/ava_boy.png");
     background-size: cover;
     background-position: top center; }
   section.form .form-avatar.girl-ava {
-    background: url("../images/card/cardgirl.jpg");
+    background: url("../images/card/ava_girl.png");
     background-size: cover;
     background-position: top center; }
   section.form .form-content {
@@ -1029,11 +1025,37 @@ section.form {
   .allhero-cards .row-card {
     margin-bottom: 10px;
     margin-top: 10px; }
+  .allhero-cards .btn-slide {
+    bottom: -73px;
+    position: absolute; }
+    .allhero-cards .btn-slide:hover {
+      -moz-transform: translateY(5px) !important;
+      -o-transform: translateY(5px) !important;
+      -ms-transform: translateY(5px) !important;
+      -webkit-transform: translateY(5px) !important;
+      transform: translateY(5px) !important;
+      -moz-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+  .allhero-cards .btn-slide-left {
+    left: -44px; }
+    @media (max-width: 480px) {
+      .allhero-cards .btn-slide-left {
+        left: 20px; } }
+  .allhero-cards .btn-slide-right {
+    right: -44px; }
+    @media (max-width: 480px) {
+      .allhero-cards .btn-slide-right {
+        right: 20px; } }
   .allhero-cards .fas.fa-arrow-left,
   .allhero-cards .fas.fa-arrow-right {
     font-size: 21px;
     color: #fff;
-    background: orange;
+    background: #e29838;
+    -webkit-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+    -moz-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+    box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
     border-radius: 100%;
     padding: 10px;
     -moz-transform: translateY(-50%);
@@ -1041,23 +1063,22 @@ section.form {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    bottom: -73px;
-    position: absolute; }
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
     @media (max-width: 480px) {
       .allhero-cards .fas.fa-arrow-left,
       .allhero-cards .fas.fa-arrow-right {
         bottom: -70px;
         top: auto; } }
-  .allhero-cards .fas.fa-arrow-left {
-    left: -44px; }
-    @media (max-width: 480px) {
-      .allhero-cards .fas.fa-arrow-left {
-        left: 20px; } }
-  .allhero-cards .fas.fa-arrow-right {
-    right: -44px; }
-    @media (max-width: 480px) {
-      .allhero-cards .fas.fa-arrow-right {
-        right: 20px; } }
+    .allhero-cards .fas.fa-arrow-left:hover,
+    .allhero-cards .fas.fa-arrow-right:hover {
+      background: #e26c38;
+      cursor: pointer;
+      -webkit-box-shadow: 5px 12px 50px 0px #e26e38;
+      -moz-box-shadow: 5px 12px 50px 0px #e26e38;
+      box-shadow: 5px 12px 50px 0px #e26e38; }
 
 .slick-slide > div {
   margin: 0 10px; }
@@ -1783,3 +1804,10 @@ h2 {
 
 .fas.fa-arrow-right:hover, .fas.fa-arrow-left:hover {
   cursor: pointer; }
+
+.plus16 {
+  color: #FFF;
+  font-size: 1em;
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }

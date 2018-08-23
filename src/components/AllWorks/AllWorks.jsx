@@ -9,13 +9,13 @@ import header_logo from '../../images/card/cardgirl.jpg';
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-   <div onClick={onClick}><i className="fas fa-arrow-right"></i></div>
+   <div className='btn-slide btn-slide-right' onClick={onClick}><i className="fas fa-arrow-right"></i></div>
   );
 }
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-     <div onClick={onClick}><i className="fas fa-arrow-left"></i></div>
+     <div className='btn-slide btn-slide-left' onClick={onClick}><i className="fas fa-arrow-left"></i></div>
   );
 }
 

@@ -35,7 +35,7 @@
 
 .allhero-cards {
     width: 90%;
-    
+
     @media (max-width: $mobile_l) {
         width: 80%;
         margin-left: auto;
@@ -48,32 +48,60 @@
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    .fas.fa-arrow-left,
-    .fas.fa-arrow-right {
-        font-size: 21px;
-        color: #fff;
-        background: orange;
-        border-radius: 100%;
-        padding: 10px;
-        @include transform(translateY(-50%));
-        bottom: -73px;
+    .btn-slide {
+         bottom: -73px;
         position: absolute;
-        @media (max-width: $mobile_p) {
-            bottom: -70px;
-            top: auto;
-        }
+
+           &:hover {
+        -moz-transform: translateY(5px)!important;
+        -o-transform: translateY(5px)!important;
+        -ms-transform: translateY(5px)!important;
+        -webkit-transform: translateY(5px)!important;
+        transform: translateY(5px)!important;
+          @include transition;
+           }
     }
-    .fas.fa-arrow-left {
-        left: -44px;
+    .btn-slide-left {
+               left: -44px;
         @media (max-width: $mobile_p) {
             left: 20px;
         }
     }
-    .fas.fa-arrow-right {
+    .btn-slide-right {
         right: -44px;
         @media (max-width: $mobile_p) {
             right: 20px;
         }
+    }
+    .fas.fa-arrow-left,
+    .fas.fa-arrow-right {
+        font-size: 21px;
+        color: #fff;
+        background: $orange;
+        -webkit-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+        -moz-box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+        box-shadow: 5px 12px 50px 0px rgba(226, 152, 56, 0.7);
+        border-radius: 100%;
+        padding: 10px;
+        @include transform(translateY(-50%));
+        @include transition;
+       
+        @media (max-width: $mobile_p) {
+            bottom: -70px;
+            top: auto;
+        }
+        &:hover {
+        background: $orange-hover;
+        cursor: pointer;
+        -webkit-box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+        -moz-box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+        box-shadow: 5px 12px 50px 0px rgba(226, 110, 56, 1);
+    }
+    }
+    .fas.fa-arrow-left {
+
+    }
+    .fas.fa-arrow-right {
     }
 }
 

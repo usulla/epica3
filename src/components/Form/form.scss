@@ -11,12 +11,12 @@ section.form {
         label {
             text-align: left;
         }
-       
+
         @media (max-width: $mobile_l) {
             width: 100%;
-             .button {
-            margin-bottom: 60px;
-        }
+            .button {
+                margin-bottom: 60px;
+            }
         }
     }
     .form-avatar {
@@ -33,14 +33,17 @@ section.form {
         margin-left: calc(50% - 10vh);
         z-index: 2;
         position: relative;
+        -webkit-box-shadow: 6px 10px 19px 17px rgba(46,60,91,0.4);
+        -moz-box-shadow: 6px 10px 19px 17px rgba(46,60,91,0.4);
+        box-shadow: 6px 10px 19px 17px rgba(46,60,91,0.4);
     }
     .form-avatar.man-ava {
-        background: url('../images/card/cardman.jpg');
+        background: url('../images/card/ava_boy.png');
         background-size: cover;
         background-position: top center;
     }
     .form-avatar.girl-ava {
-        background: url('../images/card/cardgirl.jpg');
+        background: url('../images/card/ava_girl.png');
         background-size: cover;
         background-position: top center;
     }
@@ -92,7 +95,7 @@ section.form {
         box-sizing: border-box;
 
         @media (max-width: $mobile_l) {
-             top: 3vh;
+            top: 3vh;
         }
     }
     select {
@@ -136,7 +139,7 @@ section.form {
         color-stop(0.35, #96b1d1));
     }
     .range-block {
-             margin-bottom: 25px;
+        margin-bottom: 25px;
         position: relative;
 
         label {
@@ -176,28 +179,33 @@ section.form {
 .site-title {}
 
 //Select style
-.css-1aya2g8{
-	border-radius: 40px;
-	background: #5cb1f2;
+.css-1aya2g8 {
+    border-radius: 40px;
+    background: #5cb1f2;
     border: 0;
     color: #fff;
 }
-.css-1492t68{
-color: #fff;
+
+.css-1492t68 {
+    color: #fff;
 }
-.css-d8oujb{
-	display:none;
+
+.css-d8oujb {
+    display: none;
 }
-.css-1ep9fjw{
-	color:#fff;
-&:hover{
-	color:#fff;
+
+.css-1ep9fjw {
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
 }
+
+.css-1ep9fjw:hover {
+    color: #fff;
 }
-.css-1ep9fjw:hover{
-	color:#fff;
-}
-.css-19bqh2r{
+
+.css-19bqh2r {
     width: 15px;
-    margin-right: 8px;	
+    margin-right: 8px;
 }
