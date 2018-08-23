@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import InputRange from 'react-input-range';
 
 class RangeBox extends React.Component {
-state = { value:'', value1: 28, value2: 180, value3: 8};
+state = { value:'', value1: 28, value2: 185, value3: 12};
   constructor(props) {
     super(props);
-    this.state = { value:'', value1: 28, value2: 180, value3: 8};
+    this.state = { value:'', value1: 28, value2: 185, value3: 12};
   }
   changeAvatar = (name, value) => {
      this.props.changeAvatar(name, value);

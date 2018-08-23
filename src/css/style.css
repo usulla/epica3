@@ -1640,7 +1640,10 @@ section.form {
   left: 0.6rem; }
 
 .input-range__label--max {
-  right: 0.6rem; }
+  right: 1.7rem; }
+
+.form-col2 .input-range__label--max {
+  right: 1.0rem; }
 
 .input-range__label--value {
   position: absolute;

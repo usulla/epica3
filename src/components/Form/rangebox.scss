@@ -59,13 +59,15 @@
 }
 
 .input-range__label--min {
-        left: 0.6rem;
+    left: 0.6rem;
 }
 
 .input-range__label--max {
-    right: 0.6rem;
+    right: 1.7rem;
 }
-
+.form-col2 .input-range__label--max {
+right: 1.0rem;
+}
 .input-range__label--value {
     position: absolute;
     top: -0.9rem;
@@ -78,23 +80,27 @@
     color: #000;
     font-size: .7rem;
 }
-.form-col1 .range-block.first-range .input-range__label-container:after{
-content:'лет';
-position:absolute;
-left: 1rem;
+
+.form-col1 .range-block.first-range .input-range__label-container:after {
+    content: 'лет';
+    position: absolute;
+    left: 1rem;
 }
-.form-col1 .range-block.second-range .input-range__label-container:after{
-content:'см';
-position:absolute;
-left: 1.3rem;
+
+.form-col1 .range-block.second-range .input-range__label-container:after {
+    content: 'см';
+    position: absolute;
+    left: 1.3rem;
 }
-.form-col2 .range-block.th-range .input-range__label-container:after{
-content:'ч';
-position:absolute;
-left: 0.9rem;
+
+.form-col2 .range-block.th-range .input-range__label-container:after {
+    content: 'ч';
+    position: absolute;
+    left: 0.9rem;
 }
-.input-range__slider-container .input-range__label-container:after{
-  display:none;
+
+.input-range__slider-container .input-range__label-container:after {
+    display: none;
 }
 
 .input-range__label-container {
