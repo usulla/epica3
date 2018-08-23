@@ -43,7 +43,7 @@ class SelectBox1 extends React.Component {
           >
          <option value='' disabled>{this.props.disabled_option}</option>
           {this.props.options.map((item, index) => 
-        <option key={index} value={item}>{item}</option>
+        <option key={index} value={index}>{item}</option>
            )
           }
         </Input>
