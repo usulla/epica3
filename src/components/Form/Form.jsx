@@ -90,7 +90,7 @@ class FormBlock extends Component {
 
         var options5 =['Хип-хоп (брейк данс)', 'Джаз-фанк', 'Тверк (бути дэнс)', 'Дэнсхолл','Паппинг','Вог','Степ','Контемпорари','Крамп', 'Латина (реггетон)','Стрип-пластика','Экспериментал','Авторская хореография','Классическая хореография','Современная хореография','Бальные танцы','Народный танец'];    
         var options6 =['натуральный', 'ананас', 'кокос-ваниль', 'красный апельси','клубника','вишня-черешня','гранат-малина','манго-семена чиа','персик-маракуйя', 'лимон','манго','киви-виноград','гранат-апельсин','клубника-маракуйя','Bouquet или Teasy'];  
-        var options7 =['Мигель/Татьяна', 'Денисова/Дружинин'];
+        var options7 =['Егор Дружинии', 'Татьяна Денисова', 'Мигель'];
 
         return (
             <section className='form section'>
@@ -120,7 +120,7 @@ class FormBlock extends Component {
             <SelectBox1 changeAvatar={this.changeAvatar} name={'gender'} options={options1} disabled_option={'Пол'} />
 
 
-       <RangeBox classN={'first-range'} format={'лет'} valuedef={'value1'} changeAvatar={this.changeAvatar} id2={'age'} label={'Возраст'} min={16} max={40} defaultvalue={18}/>
+            <RangeBox classN={'first-range'} format={'лет'} valuedef={'value1'} changeAvatar={this.changeAvatar} id2={'age'} label={'Возраст'} min={16} max={40} defaultvalue={18}/>
 
 
              <RangeBox classN={'second-range'} format={'см'} valuedef={'value2'} changeAvatar={this.changeAvatar} id2={'growth'} label={'Рост'} min={160} max={210} defaultvalue={175}/>
